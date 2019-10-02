@@ -15,9 +15,9 @@ const toggleMenu = new TimelineMax({ paused: true, reversed: true });
 
 toggleMenu
   .to(lineTwo, .125, { scaleX: 0 })
-  .to(lineOne, .125, { rotation: 45, transformOrigin: "50% 50%", y: 8 })
-  .to(lineThree, .125, { rotation: -45, transformOrigin: "50% 50%", y: -8 });
+  .to(lineOne, .125, { rotation: 45, transformOrigin: "50% 50%", y: 8 }, "cross")
+  .to(lineThree, .125, { rotation: -45, transformOrigin: "50% 50%", y: -8 }, "cross");
 
 hamburger.addEventListener('click', () => {
-  toggleMenu.reversed() ? toggleMenu.play() : toggleMenu.reversed();
+  toggleMenu.reversed() ? toggleMenu.play() : toggleMenu.reverse();
 })
