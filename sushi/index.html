@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <svg width="1330" height="955" viewBox="0 0 1330 955">
+  <svg width="100%" height="955" viewBox="0 0 1330 955">
     <g id="sushi" transform="translate(-89 -63)">
       <rect id="frame" width="1330" height="955" transform="translate(89 63)" fill="none" />
       <circle id="bg2" cx="237" cy="237" r="237" transform="translate(397 227)" fill="#a0fade" opacity="0.178" />
@@ -48,6 +48,8 @@
     </g>
   </svg>
 
+  <h1>Your sushi is ready!</h1>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
 
@@ -61,6 +63,9 @@
     tl.from('#chopstick2', .4, { y: '-350', opacity: 0, rotation: -60, transformOrigin: '50% 50%', ease: Power1.easeOut }, '-=.7')
     tl.from('#bg1', 1, { x: 1100, opacity: 0, ease: Power1.easeOut }, '-=.7')
     tl.from('#bg2', 1, { x: 100, opacity: 0, ease: Power1.easeOut }, '-=.7')
+
+    tl.from('h1', 2, { y: 150, opacity: 0, ease: Power4.easeOut }, '-=1')
+
 
 
 
