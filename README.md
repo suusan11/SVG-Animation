@@ -1,1 +1,1 @@
-# SVG Animation using GSAP
+# SVG Animation 
