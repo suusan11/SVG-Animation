@@ -48,7 +48,23 @@
     </g>
   </svg>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
 
+  <script>
+    var tl = new TimelineMax();
+
+    tl.from('#bowl', 1, { x: '-190', opacity: 0, ease: Power1.easeOut })
+    tl.from('#sushi1', 1, { y: '-250', opacity: 0, rotation: 20, ease: Bounce.easeOut }, '-=.4')
+    tl.from('#sushi2', 1, { y: '-250', opacity: 0, rotation: -70, transformOrigin: '50% 50%', ease: Bounce.easeOut }, '-=.7')
+    tl.from('#chopstick1', .4, { y: '-250', opacity: 0, rotation: 20, transformOrigin: '50% 50%', ease: Power1.easeOut }, '-=.7')
+    tl.from('#chopstick2', .4, { y: '-350', opacity: 0, rotation: -60, transformOrigin: '50% 50%', ease: Power1.easeOut }, '-=.7')
+    tl.from('#bg1', 1, { x: 1100, opacity: 0, ease: Power1.easeOut }, '-=.7')
+    tl.from('#bg2', 1, { x: 100, opacity: 0, ease: Power1.easeOut }, '-=.7')
+
+
+
+  </script>
 
 </body>
 
